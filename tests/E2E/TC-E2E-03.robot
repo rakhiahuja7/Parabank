@@ -8,42 +8,35 @@ Suite Setup    Run Keywords
 
 
 *** Test Cases ***
-Validate Updated Balances Using API After UI Transfer
+Validate New Account Exists in API After UI Creation
 
     Open Application
+
     Login To Parabank
+
+    Get Customer Accounts
+    ${before_list}=    Copy List    ${ACCOUNT_LIST}
+
+    Log To Console    BEFORE ACCOUNTS = ${before_list}
 
     Create New Savings Bank Account Successfully
 
+    Wait Until Element Is Visible    id=newAccountId    15s
+    ${new_account_id}=    Get Text    id=newAccountId
+
+    Log To Console    NEW ACCOUNT ID = ${new_account_id}
+
     Get Customer Accounts
+    ${after_list}=    Copy List    ${ACCOUNT_LIST}
 
-    ${account_a}=    Get From List    ${ACCOUNT_LIST}    0
-    ${account_b}=    Set Variable If    len(${ACCOUNT_LIST}) > 1    ${ACCOUNT_LIST}[1]    ${ACCOUNT_LIST}[0]
-
-    Log To Console    SOURCE = ${account_a}
-    Log To Console    DEST = ${account_b}
-
-    ${before_a}=    Get Account Balance    ${account_a}
-    ${before_b}=    Get Account Balance    ${account_b}
-
-    Log To Console    BEFORE A = ${before_a}
-    Log To Console    BEFORE B = ${before_b}
+    Log To Console    AFTER ACCOUNTS = ${after_list}
 
 
-    ${amount}=    Set Variable    5
-    Transfer Funds Between Accounts Successfully
+    List Should Contain Value    ${after_list}    ${new_account_id}
 
-    ${after_a}=    Get Account Balance    ${account_a}
-    ${after_b}=    Get Account Balance    ${account_b}
+    ${before_count}=    Get Length    ${before_list}
+    ${after_count}=     Get Length    ${after_list}
 
-    Log To Console    AFTER A = ${after_a}
-    Log To Console    AFTER B = ${after_b}
+    Should Be True    ${after_count} > ${before_count}
 
-
-    ${expected_a}=    Evaluate    float(${before_a}) - ${amount}
-    ${expected_b}=    Evaluate    float(${before_b}) + ${amount}
-
-    Should Be Equal As Numbers    ${after_a}    ${expected_a}
-    Should Be Equal As Numbers    ${after_b}    ${expected_b}
-
-    Log To Console    BALANCE VALIDATION SUCCESSFUL
+    Log To Console    NEW ACCOUNT VERIFIED SUCCESSFULLY IN API

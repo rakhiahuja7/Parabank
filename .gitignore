@@ -1,0 +1,84 @@
+# ================================
+# PYTHON & VIRTUAL ENVIRONMENTS
+# ================================
+venv/
+.venv/
+env/
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+build/
+dist/
+*.egg-info/
+.Python
+
+# ================================
+# ROBOT FRAMEWORK REPORTS
+# ================================
+output.xml
+log.html
+report.html
+debug.log
+*.robotdebug
+
+# Robot Framework Screenshots
+selenium-screenshot-*.png
+
+# Reports Folder
+reports/
+
+# ================================
+# ROBOTMETRICS
+# ================================
+RobotMetrics/
+robotmetrics-report/
+
+# ================================
+# PYCHARM
+# ================================
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# ================================
+# ENVIRONMENT FILES & SECRETS
+# ================================
+.env
+.env.*
+*.key
+*.pem
+
+# Local Config Overrides
+config/config.local.yaml
+config/config.local.py
+config_local.py
+
+# ================================
+# TESTING & COVERAGE
+# ================================
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# ================================
+# LOGS & TEMP FILES
+# ================================
+*.log
+*.tmp
+*.temp
+
+# ================================
+# WINDOWS FILES
+# ================================
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ================================
+# OS GENERATED FILES
+# ================================
+.DS_Store

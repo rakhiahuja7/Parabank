@@ -1,0 +1,21 @@
+datasources:5db2f02407e585e4009228c880ef9b48f1466f32
+commandlineoptions:5ea3922db11a42de3fa4c89e9d9f06972f891d9e
+suitesfrom:no-suites-from-option
+file:e988f2f7ffd38d4b961a5bb99f879baab8dd9268
+--suite Tests.API.TC-API-01
+--suite Tests.API.TC-API-02
+--suite Tests.API.TC-API-03
+--suite Tests.API.TC-API-04
+--suite Tests.Data Driven Testing
+--suite Tests.E2E.TC-E2E-01
+--suite Tests.E2E.TC-E2E-02
+--suite Tests.E2E.TC-E2E-03
+--suite Tests.UI.TC-UI-01
+--suite Tests.UI.TC-UI-02
+--suite Tests.UI.TC-UI-03
+--suite Tests.UI.TC-UI-04
+--suite Tests.UI.TC-UI-05
+--suite Tests.UI.TC-UI-06
+--suite Tests.UI.TC-UI-07
+--suite Tests.UI.TC-UI-08
+--suite Tests.UI.TC-UI-09

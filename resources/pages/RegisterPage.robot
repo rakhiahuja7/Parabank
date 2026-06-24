@@ -4,6 +4,8 @@ Library    SeleniumLibrary
 Resource    ../../locators/register_locators.robot
 
 
+
+
 *** Keywords ***
 
 Click Register Button

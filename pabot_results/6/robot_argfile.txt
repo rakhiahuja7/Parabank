@@ -1,0 +1,17 @@
+--suite Tests.E2E.TC-E2E-02
+--variable CALLER_ID:090c3fdee2024fc0b9c8398f2fb2cccd
+--variable PABOTLIBURI:127.0.0.1:8270
+--variable PABOTEXECUTIONPOOLID:2
+--variable PABOTISLASTEXECUTIONINPOOL:0
+--variable PABOTNUMBEROFPROCESSES:4
+--variable PABOTQUEUEINDEX:6
+--variable PABOTLASTLEVEL:Tests.E2E.TC-E2E-02
+--listener allure_robotframework
+--output output.xml
+--log NONE
+--report NONE
+--xunit NONE
+--outputdir .\pabot_results\6
+--consolecolors off
+--consolemarkers off
+tests

@@ -11,3 +11,4 @@ Login and Fetch Customer ID via API
 
     Login To Parabank
     Should Not Be Empty    ${CUSTOMER_ID}
+    Log To Console    Customer ID = ${CUSTOMER_ID}

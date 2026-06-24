@@ -43,8 +43,6 @@ Login To Parabank
 
     Set Suite Variable    ${CUSTOMER_ID}    ${customer_id}
 
-    Log To Console    Customer ID = ${CUSTOMER_ID}
-
 
 Get Customer Accounts
     ${response}=    Get On Session    parabank    /customers/${CUSTOMER_ID}/accounts
@@ -63,7 +61,6 @@ Get Customer Accounts
     END
 
     Set Suite Variable    ${ACCOUNT_LIST}    ${account_list}
-
 
 Transfer Funds
     [Arguments]    ${amount}

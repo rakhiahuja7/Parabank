@@ -5,7 +5,6 @@ Tests.API
 ==============================================================================
 Tests.API.TC-API-03
 ==============================================================================
-Customer ID = 12212
 Verify POST Transfer Funds Via API :: Verify POST /transfer execut... Successfully transferred $10 from account #12345 to account #12456
 Transfer executed successfully
 | PASS |

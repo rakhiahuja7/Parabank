@@ -5,7 +5,7 @@ Tests.E2E
 ==============================================================================
 Tests.E2E.TC-E2E-01
 ==============================================================================
-Validate Account Type And Details In API After UI Creation            UI ACCOUNT ID = 14121
+Validate Account Type And Details In API After UI Creation            UI ACCOUNT ID = 14565
 UI and API match successful
 API TYPE = SAVINGS
 API BALANCE = 100.00

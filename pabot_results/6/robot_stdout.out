@@ -5,8 +5,7 @@ Tests.E2E
 ==============================================================================
 Tests.E2E.TC-E2E-02
 ==============================================================================
-API Returns Updated Balance After Fund Transfer Via UI                Customer ID = 12212
-UI ACCOUNT ID = 14010
+API Returns Updated Balance After Fund Transfer Via UI                UI ACCOUNT ID = 14898
 | PASS |
 ------------------------------------------------------------------------------
 Tests.E2E.TC-E2E-02                                                   | PASS |

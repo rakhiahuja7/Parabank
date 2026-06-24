@@ -16,4 +16,5 @@ Verify GET Customer Accounts Returns 200 With Accounts List
     Get Customer Accounts
 
     Should Be Equal As Integers    ${STATUS_CODE}    200
+    Log To Console    Customer Accounts = ${ACCOUNT_LIST}
     Should Not Be Empty            ${ACCOUNT_LIST}

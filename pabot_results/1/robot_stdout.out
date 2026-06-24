@@ -5,8 +5,8 @@ Tests.API
 ==============================================================================
 Tests.API.TC-API-02
 ==============================================================================
-Customer ID = 12212
-Verify GET Customer Accounts Returns 200 With Accounts List :: Ver... | PASS |
+Verify GET Customer Accounts Returns 200 With Accounts List :: Ver... Customer Accounts = ['12345', '12456', '12567', '12678', '12789', '12900', '13011', '13122', '13233', '13344', '54321']
+| PASS |
 ------------------------------------------------------------------------------
 Tests.API.TC-API-02                                                   | PASS |
 1 test, 1 passed, 0 failed

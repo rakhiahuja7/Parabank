@@ -1,6 +1,5 @@
 *** Settings ***
 Resource    ../../resources/pages/TransferFundPage.robot
-Resource    ../../resources/pages/LoginPage.robot
 Resource    ../../resources/keywords/common_keywords.robot
 
 
